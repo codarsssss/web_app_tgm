@@ -2,8 +2,9 @@ from aiogram.types import InlineKeyboardButton, KeyboardButton, WebAppInfo, Repl
 from aiogram import types
 from aiogram import Dispatcher, executor, Bot
 
+from secret import BOT_TOKEN
 
-bot = Bot('')
+bot = Bot(BOT_TOKEN)
 dp = Dispatcher(bot)
 
 

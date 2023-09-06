@@ -1,6 +1,6 @@
 from aiogram.types import InlineKeyboardButton, KeyboardButton, WebAppInfo, ReplyKeyboardMarkup
 from aiogram import types
-from aiogram import Dispatcher, executor, Bot
+from aiogram import Dispatcher, Bot
 
 from secret import BOT_TOKEN
 
@@ -17,4 +17,4 @@ async def init_func(message: types.Message):
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True)
+    dp.start_polling(dp, skip_updates=True)
